@@ -1,0 +1,275 @@
+{
+  "input_path": "input/CV Zikry Adjie Nugraha.txt",
+  "role": "Chemical Engineer",
+  "input_text": "ZIKRY ADJIE NUGRAHA\nData Scientist\nJakarta, Indonesia\nDate of birth: 17/02/1998 | Phone: (+62) 856 9123 2498 │Email: zikriaj@gmail.com\nLinkedin: Zikry Adjie Nugraha | Medium: https://nugrahazikry.medium.com/ | Github: https://github.com/nugrahazikry\nSUMMARY\nData Scientist specializing in AI, LLM, Machine Learning, Data Analytics, NLP, and Computer Vision, with more than 3 years of experience in IT consulting,\nsolving complex business problems for over 10 top national and international companies across e-commerce, digital marketing, finance, and banking\nindustries. Familiar with Python, SQL, and various cloud platforms such as GCP, AWS, and Microsoft Azure for data engineering, exploration, modeling,\nanalysis, and aut omation. He is also experienced in leading, and delivering more than 20 data science projects to create impactful business solutions and\nensure actual real-life implementation for clients in a timely manner. Zikry is motivated to broaden his knowledge in the related data science expertise.\nWORK EXPERIENCES\nNucleusX BV (AI & Data Analytics consultant firms based in Netherlands)\nAI Data Scientist – Specialized in AI LLM, NLP, and Data Analytics projects. February 2024 – Present\nKey Responsibilities:\n• Implemented 1 0+ data science projects focusing on AI, ML, NLP, and chatbot development, integrating with Microsoft Azure and AWS cloud services.\n• Developed an end-to-end Generative AI, ML, and NLP pipeline seamlessly integrated into cloud infrastructure and deployed using various AWS services.\n• Integrated Gen erative AI features using Azure OpenAI into client applications and optimized AI model performance for greater accuracy and reliability.\n• Collaborated with international stakeholders and multidisciplinary teams, communicating complex data science insights to C-level leaders in business English.\nKey Achievements & Data Science Projects:\n• (Live Deployment) Developed a RAG chatbot supporting 3 languages and 100+ daily conversation for a finance company users in Netherlands and Germany.\n• (Live Deployment) Developed an AI-powered question-answering automation system to analyze and extract insights from 300+ customer FAQs weekly.\n• (Live Deployment) Redesigned NLP product matching algorithm using Integrated AI data cleaning, increasing the matching rate from 50% to 80%.\n• Improved the LLM prompting algorithm for store review categorization, reducing total unclassified labels from 60% to 10% of 50,000+ reviews.\n• Designed the complicated AI LLM labelling feature to detect target industry markets from the list of 20,000+ company descriptions within 1 week deadline.\n• Initiated AI NL P product matching standardization, reducing matching algorithm creation from 3 weeks to 5 days.\nIlmuOne Data (Digital Marketing & Data Analytics consultant firm based in Indonesia)\nData Scientist – Specialized in Data Analytics, Machine learning, and Computer vision projects. March 2022 – January 2024\nKey Responsibili ties:\n• (Acting senior) Led the team projects and responsible for the completion of 10+ data science projects, especially in Computer Vision, Data Analytics and ML projects.\n• (Acting senior) Delivered and presented the data science business solutions to numerous national clients on the weekly basis.\n• (Acting senior) Managed task distribution and project timeline among other data science team members based on their skills & knowledges and workload.\n• (Acting senior) Guided and mentored Junior Data Scientist on day-to-day project completion.\n• Designed and monitored the ETL data engineering, Python data transformation, and automation for numerous projects within Google Cloud Platform.\n• Designed and performed data queries to acquire business insights using SQL and BigQuery, with experience querying terabyte-sized e-commerce big data.\n• Analyzed and gained business solutions for data-driven decision-making from Google Analytics and visualized it into Looker Studio dashboard.\nKey Achievement & Data Science Projects:\n• (Live Deployment) Developed a computer vision automation with Vision AI, reducing the creative team ad image analysis time from 3 weeks to 1 day.\n• (Live Deployment) Built and integrated data pipelines in GCP and BigQuery, visualizing insights through Looker Studio dashboards for 5+ client projects.\n• Designed a BigQuery validation on GA360-to-GA4 migration for an e-commerce client, reducing data discrepancies from 50% to 10% of 5+ TB big data.\n• Developed a time series machine learning model for ROI forecasting with 85% accuracy, enabling 5-day advance planning for the digital marketing team.\n• Designed a d ata engineering pipeline to extract HD satellite imagery data and use it in YOLO computer vision for shrimp ponds detection.\nSKILLS AND KNOWLEDGES\n• Language Skill s: English IELTS overall 6.5, Listening 7.0, Reading 7.0, Writing 6.0, Speaking 5.5.\n• Programming Skills: Python & SQL (Data Modelling and Analytics), HTML & CSS (Web Scraping), Bash (File uploading to server).\n• AI & LLM: Microsoft Azure OpenAI, VertexAI Gemini, Amazon Bedrock, RAG, LangChain, Prompt Engineering, AI Infrastructure.\n• Computer Vision: Google Vision AI, OpenCV, YOLO, Tensorflow, Keras, PyTorch, Google Gemini Vision, GPT-4 vision.\n• Natural Language Processing: Fast text, Tokenizer, Huggingface NLP model, NLP-based similarity model (Jaro-winkler, Cosine similarity, Fuzzy).\n• Machine Learn ing: Hyperparameter tuning, Scikit-learn, AWS Sagemaker, Azure Machine Learning Studio.\n• Data Automation: GCP automation (Cloud function, Pubsub, Cloud scheduler), AWS automation (AWS EC2, AWS Lambda, AWS AppRunner, Cronjob scheduler).\n• Data Storage: SFTP, Amazon S3, Google Cloud Storage.\n• Database: Google BigQuery, Amazon RDS, PostgreSQL, Qdrant Vector DB, Azure Cosmos Vector DB.\n• Data Analytics: Google Analytics (GA 360 / GA4), Google Ads Data hub, Google Ads Manager.\n• Data Visualization: Google Looker Studio, Tableau, PowerBI, Matplotlib, Seaborn.\nLIST OF ARTICLES AND RESEARCH PUBLICATIONS\nAI-Powered Alarm Diagnostic Assistant: Integrating BLIV and Vertex AI for Smart Industrial Maintenance with RAG (Github)\n• Integrates the BLIV Dashboard for real-time manufacturing flow monitoring with Vertex AI RAG to retrieve contextually relevant information for diagnosing\nand resolving machine errors, significantly reducing problem resolution time and optimize maintenance resource utilization.\nEvaluation of the Multimodal Gemini Model in Analyzing Nutritional Value Information of Products for Diabetes Prevention (Journal link, Seminar proof)\n• Evaluates the Gemini 1.5 Flash multimodal LLM model in analyzing sugar content from photos of nutritional information on 10 beverage products, achieving\n90% accuracy and an F1 score of 94%.\nAI-Driven Diabetes Prediction and Personalized Nutritional Recommendation System (Github, Model deployment)\n• Includes three features: 1. ML-based diabetes prediction, 2. Food recommendations tailored to diabetes results, and 3. AI OCR on product composition\nlabels for food recommendation. Each feature is enhanced with GenAI to provide additional nutritional insights based on the ML model results.\nSimple Computer Vision Image Creative Analysis using Google Vision API (Github, Towards Data Science Article)\n• Tutorial demonstration on using Google Vision AI to extract meaningful information from an image and identify key parameters such as object, text, color.\nTree-Based Algorithms Approach on Predicting Customer Satisfaction (Github, Towards Data Science Article)\n• Tutorial on designing a machine learning hyperparameter model and evaluating it to predict customer satisfaction from an e-commerce dataset.\nEDA and Visualization of Indonesia Earthquake Over the last 20 years (Github, Towards Data Science Article)\n• Earthquake data analysis, visualization, and insights creation focused on the region of Indonesia over the past 20 years.\nEDUCATIONS\nSultan Ageng Tirtayasa University September 2015 – July 2019\n• Major: Bachelor of Metallurgical Engineering (GPA 3.28 of 4.00)\n• Data Science related study: Calculus, Statistics, Physics, Numerical Analysis & Modeling, Computer & Programming, Metallurgical Process Simulation\nTRAINING AND CERTIFICATIONS\nGoogle Analytics Full Course for Certification March 2022 – May 2022\n• Major: Google Analytics Certification course\n• Data Science related study: Advanced Google Analytics, Google Looker Studio, Google Analytics 4 and 360, Google BigQuery\nDibimbing IT Bootcamp August 2021 – December 2021\n• Major: Full stack Data Science Bootcamp\n• Data Science related study: Python, SQL, Data Science theory, Exploratory Data Analysis, Data visualization, Machine Learning, Project preparation\nACHIEVEMENTS AND AWARDS\nTop 8 finalist of Spark Telkomsel National Datathon (News 1, News 2, LinkedIn) February 2025\n• Surpassed 65+ teams nationwide, recognized as the only team who delivers the only AI innovation in manufacturing.\nTop 10 finalist of AI category in BPJS Kesehatan National Healthkathon (News, LinkedIn). November 2024\n• Chosen as a finalist from 350+ teams across national level, recognized for developing an AI innovation for the Diabetes patient.\nExcellence Staff in Domain Knowledge Curiosity IlmuOne Data March 2023\n• Acknowledged as the top performer among 30+ coworkers for outstanding curiosity in domain knowledge exploration.\n2nd best Data Science Final Project December 2021\n• Achieved 2nd best project among 40+ students with project featured on Towards Data Science platform.\nGrantee of the POSCO Asia International Fellowship Scholarship October 2018\n• Earned the scholarship for self-development and thesis after a highly competitive selection process involving over 100+ applicants in Indonesia.\n2nd Highest TOEFL PBT rank at 573 May 2017\n• Surpassed over 100+ University students test takers.\nStaff of the Month at Metallurgy National Organization May 2017\n• Honored for exceptional commitment in organizing a national-level Metallurgy sports competition.\n1st Highest TOEFL PBT rank at 540 February 2014\n• Ranked 1st over 270+ High school students test takers.\nORGANIZATION & VOLUNTEERING EXPERIENCES\nLiaison officer at Habitat for Humanity 28uild (News) October 2019\n• Acted as a mediator between volunteers, and community partners to paint 10+ houses and prompoting cleanliness.\nIndonesian Student Volunteer at POSCO Global Youth Volunteer (News) January 2019\n• Built 10 houses, education volunteering to 100+ junior high school students, and cultural festival between Indonesia & South Korea international students.\nHead of Committee at National Metallurgy Sport Competition July 2017\n• Supervised the planning and execution of the event by leading a committee of 40+ members with 100+ participant from Indonesia’s top universities.\nInternal Staff at National Metallurgical and Material Student Association January 2017 – February 2018\n• Facilitated internal collaboration and communication of national student associations consisting of 100+ members from 6 different universities in Indonesia,\nResearch and Development Staff at Metallurgical Student Association of Sultan Ageng Tirtayasa University January 2016 – February 2018\n• Empowering student association 80+ members to pursue and advance metallurgical research and development at campus.\n",
+  "agent_1_cv_parsing": {
+    "title": "ZIKRY ADJIE NUGRAHA",
+    "summary": "Data Scientist specializing in AI, LLM, Machine Learning, and Data Analytics with over 3 years of experience. He has worked on numerous projects for national and international companies, utilizing Python, SQL, and cloud platforms like GCP, AWS, and Azure. Zikry has a proven track record of leading and delivering impactful data science solutions.",
+    "experience": [
+      "AI Data Scientist at NucleusX BV (February 2024 – Present): Specialized in AI LLM, NLP, and Data Analytics projects, implementing 10+ data science projects focusing on AI, ML, NLP, and chatbot development, integrating with Microsoft Azure and AWS cloud services.",
+      "Data Scientist at IlmuOne Data (March 2022 – January 2024): Specialized in Data Analytics, Machine learning, and Computer vision projects, leading team projects and responsible for the completion of 10+ data science projects."
+    ],
+    "skills": [
+      "Python & SQL (Data Modelling and Analytics)",
+      "HTML & CSS (Web Scraping)",
+      "Bash (File uploading to server)",
+      "Microsoft Azure OpenAI, VertexAI Gemini, Amazon Bedrock, RAG, LangChain, Prompt Engineering, AI Infrastructure",
+      "Google Vision AI, OpenCV, YOLO, Tensorflow, Keras, PyTorch, Google Gemini Vision, GPT-4 vision",
+      "Fast text, Tokenizer, Huggingface NLP model, NLP-based similarity model (Jaro-winkler, Cosine similarity, Fuzzy)",
+      "Hyperparameter tuning, Scikit-learn, AWS Sagemaker, Azure Machine Learning Studio",
+      "GCP automation (Cloud function, Pubsub, Cloud scheduler), AWS automation (AWS EC2, AWS Lambda, AWS AppRunner, Cronjob scheduler)",
+      "SFTP, Amazon S3, Google Cloud Storage",
+      "Google BigQuery, Amazon RDS, PostgreSQL, Qdrant Vector DB, Azure Cosmos Vector DB",
+      "Google Analytics (GA 360 / GA4), Google Ads Data hub, Google Ads Manager",
+      "Google Looker Studio, Tableau, PowerBI, Matplotlib, Seaborn"
+    ],
+    "education": [
+      "Bachelor of Metallurgical Engineering, Sultan Ageng Tirtayasa University (2015 – 2019)",
+      "Google Analytics Full Course for Certification (March 2022 – May 2022)",
+      "Full stack Data Science Bootcamp, Dibimbing IT Bootcamp (August 2021 – December 2021)"
+    ],
+    "projects": [
+      "Developed a RAG chatbot supporting 3 languages and 100+ daily conversation for a finance company users in Netherlands and Germany.",
+      "Developed an AI-powered question-answering automation system to analyze and extract insights from 300+ customer FAQs weekly.",
+      "Redesigned NLP product matching algorithm using Integrated AI data cleaning, increasing the matching rate from 50% to 80%.",
+      "Developed a computer vision automation with Vision AI, reducing the creative team ad image analysis time from 3 weeks to 1 day.",
+      "Built and integrated data pipelines in GCP and BigQuery, visualizing insights through Looker Studio dashboards for 5+ client projects.",
+      "Developed a time series machine learning model for ROI forecasting with 85% accuracy, enabling 5-day advance planning for the digital marketing team."
+    ]
+  },
+  "agent_2_specialize_skills": {
+    "explicit_skills": [
+      "Data Scientist",
+      "AI",
+      "LLM",
+      "Machine Learning",
+      "Data Analytics",
+      "NLP",
+      "Computer Vision",
+      "Python",
+      "SQL",
+      "GCP",
+      "AWS",
+      "Microsoft Azure",
+      "Data engineering",
+      "Data exploration",
+      "Data modeling",
+      "Data analysis",
+      "Automation",
+      "English",
+      "HTML",
+      "CSS",
+      "Bash",
+      "Microsoft Azure OpenAI",
+      "VertexAI Gemini",
+      "Amazon Bedrock",
+      "RAG",
+      "LangChain",
+      "Prompt Engineering",
+      "AI Infrastructure",
+      "Google Vision AI",
+      "OpenCV",
+      "YOLO",
+      "Tensorflow",
+      "Keras",
+      "PyTorch",
+      "Google Gemini Vision",
+      "GPT-4 vision",
+      "Fast text",
+      "Tokenizer",
+      "Huggingface NLP model",
+      "NLP-based similarity model",
+      "Jaro-winkler",
+      "Cosine similarity",
+      "Fuzzy",
+      "Hyperparameter tuning",
+      "Scikit-learn",
+      "AWS Sagemaker",
+      "Azure Machine Learning Studio",
+      "GCP automation",
+      "Cloud function",
+      "Pubsub",
+      "Cloud scheduler",
+      "AWS automation",
+      "AWS EC2",
+      "AWS Lambda",
+      "AWS AppRunner",
+      "Cronjob scheduler",
+      "SFTP",
+      "Amazon S3",
+      "Google Cloud Storage",
+      "Google BigQuery",
+      "Amazon RDS",
+      "PostgreSQL",
+      "Qdrant Vector DB",
+      "Azure Cosmos Vector DB",
+      "Google Analytics",
+      "GA 360",
+      "GA4",
+      "Google Ads Data hub",
+      "Google Ads Manager",
+      "Google Looker Studio",
+      "Tableau",
+      "PowerBI",
+      "Matplotlib",
+      "Seaborn",
+      "IELTS"
+    ],
+    "implicit_skills": [
+      {
+        "skill": "IT consulting",
+        "evidence": "solving complex business problems for over 10 top national and international companies across e-commerce, digital marketing, finance, and banking industries."
+      },
+      {
+        "skill": "Project Management",
+        "evidence": "leading, and delivering more than 20 data science projects to create impactful business solutions"
+      },
+      {
+        "skill": "Stakeholder Management",
+        "evidence": "Collaborated with international stakeholders and multidisciplinary teams, communicating complex data science insights to C-level leaders in business English."
+      },
+      {
+        "skill": "Chatbot Development",
+        "evidence": "Implemented 10+ data science projects focusing on AI, ML, NLP, and chatbot development, integrating with Microsoft Azure and AWS cloud services."
+      },
+      {
+        "skill": "Cloud Computing",
+        "evidence": "Developed an end-to-end Generative AI, ML, and NLP pipeline seamlessly integrated into cloud infrastructure and deployed using various AWS services."
+      },
+      {
+        "skill": "Generative AI",
+        "evidence": "Integrated Generative AI features using Azure OpenAI into client applications and optimized AI model performance for greater accuracy and reliability."
+      },
+      {
+        "skill": "Problem Solving",
+        "evidence": "solving complex business problems for over 10 top national and international companies across e-commerce, digital marketing, finance, and banking industries."
+      },
+      {
+        "skill": "Communication",
+        "evidence": "Collaborated with international stakeholders and multidisciplinary teams, communicating complex data science insights to C-level leaders in business English."
+      },
+      {
+        "skill": "Team Leadership",
+        "evidence": "Led the team projects and responsible for the completion of 10+ data science projects, especially in Computer Vision, Data Analytics and ML projects."
+      },
+      {
+        "skill": "Mentoring",
+        "evidence": "Guided and mentored Junior Data Scientist on day-to-day project completion."
+      },
+      {
+        "skill": "ETL",
+        "evidence": "Designed and monitored the ETL data engineering, Python data transformation, and automation for numerous projects within Google Cloud Platform."
+      },
+      {
+        "skill": "Data Visualization",
+        "evidence": "visualizing insights through Looker Studio dashboards for 5+ client projects."
+      },
+      {
+        "skill": "Time Series Modeling",
+        "evidence": "Developed a time series machine learning model for ROI forecasting with 85% accuracy, enabling 5-day advance planning for the digital marketing team."
+      },
+      {
+        "skill": "Image Analysis",
+        "evidence": "Developed a computer vision automation with Vision AI, reducing the creative team ad image analysis time from 3 weeks to 1 day."
+      },
+      {
+        "skill": "Data Pipeline Development",
+        "evidence": "Built and integrated data pipelines in GCP and BigQuery, visualizing insights through Looker Studio dashboards for 5+ client projects."
+      },
+      {
+        "skill": "Data Validation",
+        "evidence": "Designed a BigQuery validation on GA360-to-GA4 migration for an e-commerce client, reducing data discrepancies from 50% to 10% of 5+ TB big data."
+      },
+      {
+        "skill": "Forecasting",
+        "evidence": "Developed a time series machine learning model for ROI forecasting with 85% accuracy, enabling 5-day advance planning for the digital marketing team."
+      },
+      {
+        "skill": "Data Extraction",
+        "evidence": "Designed a data engineering pipeline to extract HD satellite imagery data and use it in YOLO computer vision for shrimp ponds detection."
+      },
+      {
+        "skill": "Web Scraping",
+        "evidence": "Programming Skills: Python & SQL (Data Modelling and Analytics), HTML & CSS (Web Scraping), Bash (File uploading to server)."
+      },
+      {
+        "skill": "Data Modeling",
+        "evidence": "Programming Skills: Python & SQL (Data Modelling and Analytics), HTML & CSS (Web Scraping), Bash (File uploading to server)."
+      },
+      {
+        "skill": "Project Delivery",
+        "evidence": "Delivered and presented the data science business solutions to numerous national clients on the weekly basis."
+      },
+      {
+        "skill": "Task Management",
+        "evidence": "Managed task distribution and project timeline among other data science team members based on their skills & knowledges and workload."
+      },
+      {
+        "skill": "Research",
+        "evidence": "LIST OF ARTICLES AND RESEARCH PUBLICATIONS"
+      },
+      {
+        "skill": "Report Writing",
+        "evidence": "LIST OF ARTICLES AND RESEARCH PUBLICATIONS"
+      },
+      {
+        "skill": "Presentation",
+        "evidence": "Delivered and presented the data science business solutions to numerous national clients on the weekly basis."
+      }
+    ]
+  },
+  "agent_3_market_intelligence": {
+    "job_listings": [
+      "Chemical Engineer - Process Development",
+      "Process Engineer - Manufacturing",
+      "Chemical Engineer - R&D",
+      "Senior Chemical Engineer - Design",
+      "Chemical Engineer - Project Management",
+      "Chemical Engineer - Production Support"
+    ],
+    "job_requirements": [
+      "Bachelor's or Master's degree in Chemical Engineering",
+      "Experience in process design and optimization",
+      "Knowledge of chemical process principles (e.g., heat transfer, mass transfer, thermodynamics)",
+      "Experience with process simulation software (e.g., Aspen Plus, HYSYS)",
+      "Familiarity with safety regulations and standards (e.g., OSHA)",
+      "Ability to troubleshoot and solve complex engineering problems",
+      "Strong analytical and problem-solving skills",
+      "Excellent communication and teamwork skills",
+      "Experience with process equipment design and selection",
+      "Experience in a manufacturing environment"
+    ],
+    "skills": [
+      "Process design",
+      "Process optimization",
+      "Process simulation",
+      "Troubleshooting",
+      "Problem-solving",
+      "Data analysis",
+      "Project management",
+      "Communication (written and verbal)",
+      "Teamwork",
+      "Chemical process safety",
+      "Research and Development",
+      "Pilot plant operations"
+    ],
+    "list_of_technologies": [
+      "Aspen Plus",
+      "HYSYS",
+      "MATLAB",
+      "AutoCAD",
+      "Microsoft Office Suite",
+      "PLC (Programmable Logic Controllers)",
+      "DCS (Distributed Control Systems)",
+      "Computational Fluid Dynamics (CFD) software",
+      "Statistical Process Control (SPC) software"
+    ]
+  },
+  "agent_4_recommendation_report": {
+    "skill_gap_analysis": "The candidate's explicit and implicit skills are assessed against market requirements to identify areas where the candidate may need to upskill or gain further experience. This analysis highlights any discrepancies between the candidate's current skill set and the demands of the target role or industry.",
+    "key_strengths": "The candidate's strongest skills and experiences are summarized, emphasizing the qualities that align well with the role's requirements and market trends. This includes both technical proficiencies and soft skills that contribute to overall suitability.",
+    "upskilling_plan": "A concise plan is provided, suggesting specific areas for improvement or additional learning. This may involve recommending courses, certifications, or practical experiences to bridge any identified skill gaps and enhance the candidate's competitiveness.",
+    "is_candidate_recommended": true,
+    "recommendation_reason": "The candidate is recommended based on a comprehensive evaluation of their skills, experience, and alignment with market demands. The recommendation considers both explicit and implicit skills, as well as the candidate's potential for growth and adaptability."
+  }
+}

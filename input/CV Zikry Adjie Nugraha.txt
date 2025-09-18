@@ -1,0 +1,109 @@
+ZIKRY ADJIE NUGRAHA
+Data Scientist
+Jakarta, Indonesia
+Date of birth: 17/02/1998 | Phone: (+62) 856 9123 2498 │Email: zikriaj@gmail.com
+Linkedin: Zikry Adjie Nugraha | Medium: https://nugrahazikry.medium.com/ | Github: https://github.com/nugrahazikry
+SUMMARY
+Data Scientist specializing in AI, LLM, Machine Learning, Data Analytics, NLP, and Computer Vision, with more than 3 years of experience in IT consulting,
+solving complex business problems for over 10 top national and international companies across e-commerce, digital marketing, finance, and banking
+industries. Familiar with Python, SQL, and various cloud platforms such as GCP, AWS, and Microsoft Azure for data engineering, exploration, modeling,
+analysis, and aut omation. He is also experienced in leading, and delivering more than 20 data science projects to create impactful business solutions and
+ensure actual real-life implementation for clients in a timely manner. Zikry is motivated to broaden his knowledge in the related data science expertise.
+WORK EXPERIENCES
+NucleusX BV (AI & Data Analytics consultant firms based in Netherlands)
+AI Data Scientist – Specialized in AI LLM, NLP, and Data Analytics projects. February 2024 – Present
+Key Responsibilities:
+• Implemented 1 0+ data science projects focusing on AI, ML, NLP, and chatbot development, integrating with Microsoft Azure and AWS cloud services.
+• Developed an end-to-end Generative AI, ML, and NLP pipeline seamlessly integrated into cloud infrastructure and deployed using various AWS services.
+• Integrated Gen erative AI features using Azure OpenAI into client applications and optimized AI model performance for greater accuracy and reliability.
+• Collaborated with international stakeholders and multidisciplinary teams, communicating complex data science insights to C-level leaders in business English.
+Key Achievements & Data Science Projects:
+• (Live Deployment) Developed a RAG chatbot supporting 3 languages and 100+ daily conversation for a finance company users in Netherlands and Germany.
+• (Live Deployment) Developed an AI-powered question-answering automation system to analyze and extract insights from 300+ customer FAQs weekly.
+• (Live Deployment) Redesigned NLP product matching algorithm using Integrated AI data cleaning, increasing the matching rate from 50% to 80%.
+• Improved the LLM prompting algorithm for store review categorization, reducing total unclassified labels from 60% to 10% of 50,000+ reviews.
+• Designed the complicated AI LLM labelling feature to detect target industry markets from the list of 20,000+ company descriptions within 1 week deadline.
+• Initiated AI NL P product matching standardization, reducing matching algorithm creation from 3 weeks to 5 days.
+IlmuOne Data (Digital Marketing & Data Analytics consultant firm based in Indonesia)
+Data Scientist – Specialized in Data Analytics, Machine learning, and Computer vision projects. March 2022 – January 2024
+Key Responsibili ties:
+• (Acting senior) Led the team projects and responsible for the completion of 10+ data science projects, especially in Computer Vision, Data Analytics and ML projects.
+• (Acting senior) Delivered and presented the data science business solutions to numerous national clients on the weekly basis.
+• (Acting senior) Managed task distribution and project timeline among other data science team members based on their skills & knowledges and workload.
+• (Acting senior) Guided and mentored Junior Data Scientist on day-to-day project completion.
+• Designed and monitored the ETL data engineering, Python data transformation, and automation for numerous projects within Google Cloud Platform.
+• Designed and performed data queries to acquire business insights using SQL and BigQuery, with experience querying terabyte-sized e-commerce big data.
+• Analyzed and gained business solutions for data-driven decision-making from Google Analytics and visualized it into Looker Studio dashboard.
+Key Achievement & Data Science Projects:
+• (Live Deployment) Developed a computer vision automation with Vision AI, reducing the creative team ad image analysis time from 3 weeks to 1 day.
+• (Live Deployment) Built and integrated data pipelines in GCP and BigQuery, visualizing insights through Looker Studio dashboards for 5+ client projects.
+• Designed a BigQuery validation on GA360-to-GA4 migration for an e-commerce client, reducing data discrepancies from 50% to 10% of 5+ TB big data.
+• Developed a time series machine learning model for ROI forecasting with 85% accuracy, enabling 5-day advance planning for the digital marketing team.
+• Designed a d ata engineering pipeline to extract HD satellite imagery data and use it in YOLO computer vision for shrimp ponds detection.
+SKILLS AND KNOWLEDGES
+• Language Skill s: English IELTS overall 6.5, Listening 7.0, Reading 7.0, Writing 6.0, Speaking 5.5.
+• Programming Skills: Python & SQL (Data Modelling and Analytics), HTML & CSS (Web Scraping), Bash (File uploading to server).
+• AI & LLM: Microsoft Azure OpenAI, VertexAI Gemini, Amazon Bedrock, RAG, LangChain, Prompt Engineering, AI Infrastructure.
+• Computer Vision: Google Vision AI, OpenCV, YOLO, Tensorflow, Keras, PyTorch, Google Gemini Vision, GPT-4 vision.
+• Natural Language Processing: Fast text, Tokenizer, Huggingface NLP model, NLP-based similarity model (Jaro-winkler, Cosine similarity, Fuzzy).
+• Machine Learn ing: Hyperparameter tuning, Scikit-learn, AWS Sagemaker, Azure Machine Learning Studio.
+• Data Automation: GCP automation (Cloud function, Pubsub, Cloud scheduler), AWS automation (AWS EC2, AWS Lambda, AWS AppRunner, Cronjob scheduler).
+• Data Storage: SFTP, Amazon S3, Google Cloud Storage.
+• Database: Google BigQuery, Amazon RDS, PostgreSQL, Qdrant Vector DB, Azure Cosmos Vector DB.
+• Data Analytics: Google Analytics (GA 360 / GA4), Google Ads Data hub, Google Ads Manager.
+• Data Visualization: Google Looker Studio, Tableau, PowerBI, Matplotlib, Seaborn.
+LIST OF ARTICLES AND RESEARCH PUBLICATIONS
+AI-Powered Alarm Diagnostic Assistant: Integrating BLIV and Vertex AI for Smart Industrial Maintenance with RAG (Github)
+• Integrates the BLIV Dashboard for real-time manufacturing flow monitoring with Vertex AI RAG to retrieve contextually relevant information for diagnosing
+and resolving machine errors, significantly reducing problem resolution time and optimize maintenance resource utilization.
+Evaluation of the Multimodal Gemini Model in Analyzing Nutritional Value Information of Products for Diabetes Prevention (Journal link, Seminar proof)
+• Evaluates the Gemini 1.5 Flash multimodal LLM model in analyzing sugar content from photos of nutritional information on 10 beverage products, achieving
+90% accuracy and an F1 score of 94%.
+AI-Driven Diabetes Prediction and Personalized Nutritional Recommendation System (Github, Model deployment)
+• Includes three features: 1. ML-based diabetes prediction, 2. Food recommendations tailored to diabetes results, and 3. AI OCR on product composition
+labels for food recommendation. Each feature is enhanced with GenAI to provide additional nutritional insights based on the ML model results.
+Simple Computer Vision Image Creative Analysis using Google Vision API (Github, Towards Data Science Article)
+• Tutorial demonstration on using Google Vision AI to extract meaningful information from an image and identify key parameters such as object, text, color.
+Tree-Based Algorithms Approach on Predicting Customer Satisfaction (Github, Towards Data Science Article)
+• Tutorial on designing a machine learning hyperparameter model and evaluating it to predict customer satisfaction from an e-commerce dataset.
+EDA and Visualization of Indonesia Earthquake Over the last 20 years (Github, Towards Data Science Article)
+• Earthquake data analysis, visualization, and insights creation focused on the region of Indonesia over the past 20 years.
+EDUCATIONS
+Sultan Ageng Tirtayasa University September 2015 – July 2019
+• Major: Bachelor of Metallurgical Engineering (GPA 3.28 of 4.00)
+• Data Science related study: Calculus, Statistics, Physics, Numerical Analysis & Modeling, Computer & Programming, Metallurgical Process Simulation
+TRAINING AND CERTIFICATIONS
+Google Analytics Full Course for Certification March 2022 – May 2022
+• Major: Google Analytics Certification course
+• Data Science related study: Advanced Google Analytics, Google Looker Studio, Google Analytics 4 and 360, Google BigQuery
+Dibimbing IT Bootcamp August 2021 – December 2021
+• Major: Full stack Data Science Bootcamp
+• Data Science related study: Python, SQL, Data Science theory, Exploratory Data Analysis, Data visualization, Machine Learning, Project preparation
+ACHIEVEMENTS AND AWARDS
+Top 8 finalist of Spark Telkomsel National Datathon (News 1, News 2, LinkedIn) February 2025
+• Surpassed 65+ teams nationwide, recognized as the only team who delivers the only AI innovation in manufacturing.
+Top 10 finalist of AI category in BPJS Kesehatan National Healthkathon (News, LinkedIn). November 2024
+• Chosen as a finalist from 350+ teams across national level, recognized for developing an AI innovation for the Diabetes patient.
+Excellence Staff in Domain Knowledge Curiosity IlmuOne Data March 2023
+• Acknowledged as the top performer among 30+ coworkers for outstanding curiosity in domain knowledge exploration.
+2nd best Data Science Final Project December 2021
+• Achieved 2nd best project among 40+ students with project featured on Towards Data Science platform.
+Grantee of the POSCO Asia International Fellowship Scholarship October 2018
+• Earned the scholarship for self-development and thesis after a highly competitive selection process involving over 100+ applicants in Indonesia.
+2nd Highest TOEFL PBT rank at 573 May 2017
+• Surpassed over 100+ University students test takers.
+Staff of the Month at Metallurgy National Organization May 2017
+• Honored for exceptional commitment in organizing a national-level Metallurgy sports competition.
+1st Highest TOEFL PBT rank at 540 February 2014
+• Ranked 1st over 270+ High school students test takers.
+ORGANIZATION & VOLUNTEERING EXPERIENCES
+Liaison officer at Habitat for Humanity 28uild (News) October 2019
+• Acted as a mediator between volunteers, and community partners to paint 10+ houses and prompoting cleanliness.
+Indonesian Student Volunteer at POSCO Global Youth Volunteer (News) January 2019
+• Built 10 houses, education volunteering to 100+ junior high school students, and cultural festival between Indonesia & South Korea international students.
+Head of Committee at National Metallurgy Sport Competition July 2017
+• Supervised the planning and execution of the event by leading a committee of 40+ members with 100+ participant from Indonesia’s top universities.
+Internal Staff at National Metallurgical and Material Student Association January 2017 – February 2018
+• Facilitated internal collaboration and communication of national student associations consisting of 100+ members from 6 different universities in Indonesia,
+Research and Development Staff at Metallurgical Student Association of Sultan Ageng Tirtayasa University January 2016 – February 2018
+• Empowering student association 80+ members to pursue and advance metallurgical research and development at campus.
