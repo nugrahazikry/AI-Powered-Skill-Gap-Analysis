@@ -6,7 +6,7 @@ def list_to_markdown(items):
     return "\n".join([f"{i+1}. {item}" for i, item in enumerate(items)])
 
 def main():
-    st.title("CV & Skills Parsing Demo")
+    st.title("AI-Powered-Skill-Gap-Analysis")
 
     # Frontend inputs
     uploaded_file = st.file_uploader("Upload a TXT file", type="txt")
@@ -24,37 +24,40 @@ def main():
             multi_agents_result = run_pipeline(cv_path=temp_path, role=target_role)
 
             with st.expander("Agent 1 - CV Parsing", expanded=False):
-                markdown_cv_parsing = f"""### CV Parsing
+                markdown_cv_parsing = f"""### Agent 1 - CV Parsing
 
-**Candidate name**\n
-{multi_agents_result['agent_1_cv_parsing']['title']}
-
-**CV summary**\n
+#### CV summary\n
 {multi_agents_result['agent_1_cv_parsing']['summary']}
 
-**Candidate experience**\n
+#### Candidate experience\n
 {list_to_markdown(multi_agents_result['agent_1_cv_parsing']['experience'])}
 
-**Candidate skills**\n
+#### Candidate skills\n
 {list_to_markdown(multi_agents_result['agent_1_cv_parsing']['skills'])}
 
-**Candidate education**\n
+#### Candidate education\n
 {list_to_markdown(multi_agents_result['agent_1_cv_parsing']['education'])}
 
-**Candidate projects**\n
+#### Candidate projects\n
 {list_to_markdown(multi_agents_result['agent_1_cv_parsing']['projects'])}"""
 
                 st.markdown(markdown_cv_parsing)
 
 
             with st.expander("Agent 2 - Skills Specialization", expanded=False):
+
+                markdown_str = ""
+                for i, item in enumerate(multi_agents_result['agent_2_specialize_skills']['implicit_skills'], start=1):
+                    markdown_str += f"{i}. {item['skill']}\n"
+                    markdown_str += f"- Evidence: {item['evidence']}\n\n"
+
                 markdown_candidate_skills = f"""### Skills Specialization
 
-**Candidate explicit skills**\n
+#### Candidate explicit skills\n
 {list_to_markdown(multi_agents_result['agent_2_specialize_skills']['explicit_skills'])}
 
-**Candidate implicit **\n
-{list_to_markdown(multi_agents_result['agent_2_specialize_skills']['implicit_skills'])}"""
+#### Candidate implicit skills\n
+{markdown_str}"""
 
                 st.markdown(markdown_candidate_skills)
 
@@ -62,16 +65,13 @@ def main():
             with st.expander("Agent 3 - Market Analysis", expanded=False):
                 markdown_market_analysis = f"""### Market Analysis
 
-**Job listings**\n
-{list_to_markdown(multi_agents_result['agent_3_market_intelligence']['job_listings'])}
-
-**Job requirements**\n
+#### Job requirements\n
 {list_to_markdown(multi_agents_result['agent_3_market_intelligence']['job_requirements'])}
 
-**Demanded skills**\n
-{list_to_markdown(multi_agents_result['agent_3_market_intelligence']['skills'])}
+#### Demanded skills\n
+{list_to_markdown(multi_agents_result['agent_3_market_intelligence']['demanded_skills'])}
 
-**List of demand technologies**\n
+#### List of demand technologies\n
 {list_to_markdown(multi_agents_result['agent_3_market_intelligence']['list_of_technologies'])}"""
 
                 st.markdown(markdown_market_analysis)
@@ -81,16 +81,24 @@ def main():
             with st.expander("Agent 4 - Recommendation Report", expanded=False):
                 markdown_report = f"""### Final Report
 
-**Skill gap analysis**\n
+#### Skill gap analysis\n
 {multi_agents_result['agent_4_recommendation_report']['skill_gap_analysis']}
 
-**Key Strengths**\n
+#### Key Strengths\n
 {multi_agents_result['agent_4_recommendation_report']['key_strengths']}
 
-**Upskilling Plan**\n
+#### Upskilling Plan\n
 {multi_agents_result['agent_4_recommendation_report']['upskilling_plan']}"""
 
                 st.markdown(markdown_report)
+
+             # Add download button
+            st.download_button(
+                label="📥 Download Report",
+                data=markdown_report,
+                file_name="recommendation_report.md",  # you can change to .txt if needed
+                mime="text/markdown"
+            )
 
 
 if __name__ == "__main__":
