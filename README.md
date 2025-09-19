@@ -10,7 +10,9 @@ The purpose of this project is to implement a multi-agent system that processes 
 This system enables recruiters to uncover a candidate’s true potential and streamline the evaluation of large volumes of CVs, ultimately improving the recruitment process and decision-making efficiency.
 
 ## Architectural overview
-![Alt text](Image/Multi AI Agents.png)
+<p align="center">
+  <img src="Image/Multi AI Agents.png" alt="Alt text" width="400">
+</p>
 This project leverages a hierarchical multi-agent architecture consisting of four AI agents and one tool. The framework is built using LangGraph and powered by Google Gemini 2.0 Flash Lite as the underlying LLM model.
 In the hierarchical workflow, each AI agent has a specific role as follows:
 
