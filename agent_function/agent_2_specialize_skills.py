@@ -4,9 +4,8 @@ import re
 import json
 import config.constants as constants
 
-# ---------- Graph B: Skills extractor (consumes text -> returns explicit & implicit skills)
+# ---------- Graph B: Skills Specialization
 def skills_node(state: PipelineState):
-    # text = state.get("input_text", "")
     summary = state.get("agent_1_cv_parsing", {}).get("summary", "")
     experience = state.get("agent_1_cv_parsing", {}).get("experience", [])
     skills = state.get("agent_1_cv_parsing", {}).get("skills", [])
@@ -63,20 +62,3 @@ def skills_node(state: PipelineState):
         print(f"❌ The skills are failed to be listed.")
 
     return {"agent_2_specialize_skills": skill_extractor_json_obj}
-
-
-    # You are a helpful assistant that classifies skills.
-
-    # Document:
-    # ---START---
-    # {text}
-    # ---END---
-
-    # 1) "explicit_skills": list **only** skills that are directly mentioned in the text (single words or short phrases).
-    # 2) "implicit_skills": list skills that are reasonably inferred from duties/responsibilities (give a one-line evidence note for each inferred skill).
-
-    # Return ONLY valid JSON (no extra commentary).
-    # {{
-    # "explicit_skills": ["skillA", "skillB"],
-    # "implicit_skills": [ {{"skill":"skillX", "evidence":"one-line evidence"}}, ... ]
-    # }}

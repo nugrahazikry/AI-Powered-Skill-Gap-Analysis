@@ -4,6 +4,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 import config.constants as constants
 from schemas.pipeline_state import PipelineState
 
+# ---------- Graph D: Recommendation report
 def recommendation_report_agent(state: PipelineState):
     explicit_skills = state.get("agent_2_specialize_skills", {}).get("explicit_skills", [])
     implicit_skills = state.get("agent_2_specialize_skills", {}).get("implicit_skills", [])

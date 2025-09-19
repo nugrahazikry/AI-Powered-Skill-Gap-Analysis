@@ -1,19 +1,43 @@
 import json
 import re
-from langchain_core.messages import SystemMessage, HumanMessage
+from google import genai
+from google.genai import types
 import config.constants as constants
 from schemas.pipeline_state import PipelineState
 
-# ---- Nodes ----
+# ---------- Graph C: Job Market Analysis
+def grounded_response(prompt: str, 
+                      model_name: str = constants.MODEL_NAME, 
+                      client=constants.CLIENT):
+    """Use Gemini to generate search-like job market data."""
+    
+    # Define the tool: enable Google Search
+    grounding_tool = types.Tool(
+        google_search = types.GoogleSearch()
+    )
+
+    # Create config
+    config = types.GenerateContentConfig(
+        tools = [grounding_tool]
+    )
+
+    # Make the request
+    response = client.models.generate_content(
+        model = model_name,
+        contents = prompt,
+        config = config,
+    )
+
+    return response
+
 def search_jobs(state: PipelineState):
     """Use Gemini to generate search-like job market data."""
 
     role = state.get("role", "")
 
-    system_prompt = """
-    You are an AI agent that simulates job market research."""
-
     search_jobs_prompt = f"""
+    You are an AI agent that simulates job market research.
+
     Find the most recent job listings, requirements, skills, and technologies commonly requested for the role '{role}'. 
     Act as if you searched the web for current job postings and market demand for this role and synthesize the results into concise bullet points.
 
@@ -31,12 +55,9 @@ def search_jobs(state: PipelineState):
     "list_of_technologies": ["technology/tool/framework 1", "technology 2", "..."]
     }}
     """
-
-    system_message = SystemMessage(content=system_prompt)
-    human_message = HumanMessage(content=search_jobs_prompt)
-
-    response = constants.llm.invoke([system_message, human_message])
-    search_jobs_raw = response.content
+    
+    response = grounded_response(search_jobs_prompt)
+    search_jobs_raw = response.text
 
     try:
         search_jobs_json_text = re.search(r"\{.*\}", search_jobs_raw, re.S).group(0)
@@ -52,15 +73,3 @@ def search_jobs(state: PipelineState):
         print(f"❌ Industry trends are failed to be extracted.")
 
     return {"agent_3_market_intelligence": search_jobs_json_obj}
-
-
-# Find the most recent job listings, requirements, skills, and technologies 
-#     commonly requested for the role '{role}'. Provide concise bullet points 
-#     as if you had searched the web.
-    
-#     Return ONLY valid JSON (no extra commentary).
-#     {{
-#     "job_requirements": list of common job requirements, qualifications, or responsibilities (array of strings),
-#     "demanded_skills": list of skills explicitly requested in job postings (array of strings),
-#     "list_of_technologies": list of technologies, tools, or frameworks commonly requested (array of strings)
-#     }}

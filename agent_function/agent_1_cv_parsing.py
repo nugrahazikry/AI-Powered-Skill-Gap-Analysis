@@ -4,7 +4,7 @@ import re
 import json
 import config.constants as constants
 
-# ---------- Graph A: Extractor (reads file -> runs extract prompt)
+# ---------- Graph A: CV Parsing
 def extract_info_node(state: PipelineState):
     text = state.get("input_text", "")
 
@@ -60,29 +60,3 @@ def extract_info_node(state: PipelineState):
         print(f"❌ The file is failed to be parsed.")
 
     return {"agent_1_cv_parsing": parsing_json_obj}
-
-
-    # parsing_prompt = f"""
-    # You are a concise information extraction assistant.
-    # Given the document below, provide the concise yet detail information.
-    
-    # Document:
-    # ---START---
-    # {text}
-    # ---END---
-    
-    # Return ONLY valid JSON (no extra commentary). 
-    # {{
-    # "summary": 2-3 sentence summary of the most important points (string),
-    # "experience": list of professional experiences (array of strings),
-    # "skills": list of skills or technical proficiencies (array of strings),
-    # "education": list of educational qualifications (array of strings),
-    # "projects": list of notable projects (array of strings)
-    # }}
-    # """
-
-    #     "summary": 2-3 sentence summary of the most important points (string),
-    # "experience": list of professional experiences (array of strings),
-    # "skills": list of skills or technical proficiencies (array of strings),
-    # "education": list of educational qualifications (array of strings),
-    # "projects": list of notable projects (array of strings)
