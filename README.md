@@ -6,10 +6,11 @@ The purpose of this project is to implement a multi-agent system that processes 
 2. Retrieve insights on current job market demands.
 3. Compare the candidate’s skills against market requirements.
 4. Produce a skill-gap analysis with actionable feedback on missing or underdeveloped skills.
+   
 This system enables recruiters to uncover a candidate’s true potential and streamline the evaluation of large volumes of CVs, ultimately improving the recruitment process and decision-making efficiency.
 
 ## Architectural overview
-
+![Alt text](Image/Multi AI Agents.png)
 This project leverages a hierarchical multi-agent architecture consisting of four AI agents and one tool. The framework is built using LangGraph and powered by Google Gemini 2.0 Flash Lite as the underlying LLM model.
 In the hierarchical workflow, each AI agent has a specific role as follows:
 
@@ -23,6 +24,7 @@ This agent extracts key candidate information from the CV with the support of th
 This agent processes the output from Agent 1 to generate a detailed breakdown of the candidate’s explicit and implicit skills:
 1. Explicit skills: Directly mentioned in the CV.
 2. Implicit skills: Inferred by the LLM from the candidate’s summary, experience, education, and projects.
+
 The LLM also provides justification to support the inferred skills, helping recruiters validate the results.
 
 ### 4. Agent 3 - Job Market Analysis
@@ -33,12 +35,15 @@ In this step, the user specifies the target role for skill comparison. Using LLM
 
 ### 5. Agent 4 - Recommendation report
 This agent compares the candidate’s skills (from Agents 1 and 2) with the job market demands (from Agent 3). It generates a skill-gap analysis, highlights key strengths, and provides a development plan to enhance the candidate’s capabilities.
+
 The final output is delivered as a markdown report, giving recruiters a clear and structured view of the candidate’s potential.
 
 ## Technical Requirements
-### 1. Multi-AI Agent Frameworks: LangGraph
-### 2. Programming Language: Python
-### 3. Web search tools: Google Gemini Grounding Search
+Attached are the technical requirements needed to run this project:
+1. Multi-AI Agent Frameworks: LangGraph
+2. Programming Language: Python
+3. LLM: Google Gemini 2.0 Flash Lite
+4. Web search tools: Google Gemini Grounding Search
 
 ## Setup Environment and Install Dependencies
 
@@ -83,6 +88,7 @@ http://localhost:8501
 
 ### 3. Upload your CV and fill the role
 Prepare your CV in .txt format. Use the Upload File button in the web app to upload it.
+
 Then, enter the target role you want to analyze (e.g., Data Scientist, Software Engineer).
 
 ### 4. Start the analysis
