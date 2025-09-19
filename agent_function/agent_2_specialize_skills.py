@@ -6,27 +6,41 @@ import config.constants as constants
 
 # ---------- Graph B: Skills extractor (consumes text -> returns explicit & implicit skills)
 def skills_node(state: PipelineState):
-    text = state.get("input_text", "")
+    # text = state.get("input_text", "")
+    summary = state.get("agent_1_cv_parsing", {}).get("summary", "")
+    experience = state.get("agent_1_cv_parsing", {}).get("experience", [])
+    skills = state.get("agent_1_cv_parsing", {}).get("skills", [])
+    education = state.get("agent_1_cv_parsing", {}).get("education", [])
+    projects = state.get("agent_1_cv_parsing", {}).get("projects", [])
 
     system_prompt = """
     You are a specialized AI agent whose role is to identify and classify skills 
     from text into explicit and implicit categories."""
 
     skill_extractor_prompt = f"""
-    You are a helpful assistant that classifies skills.
+    Your task is to extract both explicit and implicit skills from the given document.  
+
+    Rule-based instructions:
+    1. "explicit_skills": List **only** the skills that are directly mentioned in the text. Each entry should be a single word or short phrase.  
+    2. "implicit_skills": List skills that can be reasonably inferred from the duties, responsibilities, or context of the document. For each inferred skill, include a short one-line evidence note explaining the reasoning.  
+    3. If no skills are found for a category, return an empty list for that field.  
 
     Document:
     ---START---
-    {text}
+    summary: {summary}
+    experience: {experience}
+    skills: {skills}
+    education: {education}
+    projects: {projects}
     ---END---
-
-    1) "explicit_skills": list **only** skills that are directly mentioned in the text (single words or short phrases).
-    2) "implicit_skills": list skills that are reasonably inferred from duties/responsibilities (give a one-line evidence note for each inferred skill).
 
     Return ONLY valid JSON (no extra commentary).
     {{
-    "explicit_skills": ["skillA", "skillB"],
-    "implicit_skills": [ {{"skill":"skillX", "evidence":"one-line evidence"}}, ... ]
+  "explicit_skills": ["skillA", "skillB"],  
+  "implicit_skills": [  
+    {{"skill": "skillX", "evidence": "one-line evidence"}},  
+    {{"skill": "skillY", "evidence": "one-line evidence"}}  
+    ]  
     }}
     """
     
@@ -49,3 +63,20 @@ def skills_node(state: PipelineState):
         print(f"❌ The skills are failed to be listed.")
 
     return {"agent_2_specialize_skills": skill_extractor_json_obj}
+
+
+    # You are a helpful assistant that classifies skills.
+
+    # Document:
+    # ---START---
+    # {text}
+    # ---END---
+
+    # 1) "explicit_skills": list **only** skills that are directly mentioned in the text (single words or short phrases).
+    # 2) "implicit_skills": list skills that are reasonably inferred from duties/responsibilities (give a one-line evidence note for each inferred skill).
+
+    # Return ONLY valid JSON (no extra commentary).
+    # {{
+    # "explicit_skills": ["skillA", "skillB"],
+    # "implicit_skills": [ {{"skill":"skillX", "evidence":"one-line evidence"}}, ... ]
+    # }}

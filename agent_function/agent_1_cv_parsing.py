@@ -13,8 +13,15 @@ def extract_info_node(state: PipelineState):
     and structured information extraction."""
 
     parsing_prompt = f"""
-    You are a concise information extraction assistant.
-    Given the document below, provide the concise yet fetail information.
+    Your goal is to read the given document and extract structured information in a concise yet detailed way.
+
+    Rule-based instructions:
+    1. Summarize the most important points of the document in 2–3 sentences.  
+    2. Extract professional experiences as a list of short, clear strings.  
+    3. Extract skills or technical proficiencies as a list of short, clear strings.  
+    4. Extract educational qualifications as a list of short, clear strings.  
+    5. Extract notable projects as a list of short, clear strings.  
+    6. If a category is not found in the document, return an empty list for that field.  
     
     Document:
     ---START---
@@ -23,12 +30,11 @@ def extract_info_node(state: PipelineState):
     
     Return ONLY valid JSON (no extra commentary). 
     {{
-    "title": short title or first line if present (string or empty),
-    "summary": 2-3 sentence summary of the most important points (string),
-    "experience": list of professional experiences (array of strings),
-    "skills": list of skills or technical proficiencies (array of strings),
-    "education": list of educational qualifications (array of strings),
-    "projects": list of notable projects (array of strings)
+    "summary": "2–3 sentence summary of the most important points",  
+    "experience": ["experience_1", "experience_2", ...],  
+    "skills": ["skill_1", "skill_2", ...],  
+    "education": ["education_1", "education_2", ...],  
+    "projects": ["project_1", "project_2", ...]  
     }}
     """
 
@@ -45,7 +51,6 @@ def extract_info_node(state: PipelineState):
         
     except Exception:
         parsing_json_obj = {
-            "title": "", 
             "summary": "",
             "experience": [],
             "skills": [],
@@ -55,3 +60,29 @@ def extract_info_node(state: PipelineState):
         print(f"❌ The file is failed to be parsed.")
 
     return {"agent_1_cv_parsing": parsing_json_obj}
+
+
+    # parsing_prompt = f"""
+    # You are a concise information extraction assistant.
+    # Given the document below, provide the concise yet detail information.
+    
+    # Document:
+    # ---START---
+    # {text}
+    # ---END---
+    
+    # Return ONLY valid JSON (no extra commentary). 
+    # {{
+    # "summary": 2-3 sentence summary of the most important points (string),
+    # "experience": list of professional experiences (array of strings),
+    # "skills": list of skills or technical proficiencies (array of strings),
+    # "education": list of educational qualifications (array of strings),
+    # "projects": list of notable projects (array of strings)
+    # }}
+    # """
+
+    #     "summary": 2-3 sentence summary of the most important points (string),
+    # "experience": list of professional experiences (array of strings),
+    # "skills": list of skills or technical proficiencies (array of strings),
+    # "education": list of educational qualifications (array of strings),
+    # "projects": list of notable projects (array of strings)
