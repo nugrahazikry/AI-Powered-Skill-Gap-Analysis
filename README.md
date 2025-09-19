@@ -10,11 +10,11 @@ The purpose of this project is to implement a multi-agent system that processes 
 This system enables recruiters to uncover a candidate’s true potential and streamline the evaluation of large volumes of CVs, ultimately improving the recruitment process and decision-making efficiency.
 
 ## Architectural overview
+This project leverages a hierarchical multi-agent architecture consisting of four AI agents and one tool. 
 <p align="center">
   <img src="Image/Multi AI Agents.png" alt="Alt text" width="400">
 </p>
-This project leverages a hierarchical multi-agent architecture consisting of four AI agents and one tool. The framework is built using LangGraph and powered by Google Gemini 2.0 Flash Lite as the underlying LLM model.
-In the hierarchical workflow, each AI agent has a specific role as follows:
+The framework is built using LangGraph and powered by Google Gemini 2.0 Flash Lite as the underlying LLM model. In the hierarchical workflow, each AI agent has a specific role as follows:
 
 ### 1. Tools 1 - Read node
 This tool transforms the candidate’s CV into a readable string format for further processing.
@@ -89,22 +89,21 @@ http://localhost:8501
 ```
 
 ### 3. Upload your CV and fill out the role
+Prepare your CV in .txt format. Use the Upload File button in the web app to upload it.
 <p align="center">
   <img src="Image/Input skill gap analysis.png" alt="Alt text" width="400">
 </p>
-Prepare your CV in .txt format. Use the Upload File button in the web app to upload it.
-
 Then, enter the target role you want to analyze (e.g., Data Scientist, Software Engineer).
 
 ### 4. Start the analysis
+Click Analyze to process your CV against the selected role using job market insights.
 <p align="center">
   <img src="Image/analysis result.png" alt="Alt text" width="400">
 </p>
-Click Analyze to process your CV against the selected role using job market insights.
 
 ### 5. Final report result
+Each agent’s results will be displayed in Streamlit.
 <p align="center">
   <img src="Image/final report download.png" alt="Alt text" width="400">
 </p>
-Each agent’s results will be displayed in Streamlit.
 A comprehensive final report can be downloaded, providing clear insights into your skill-gap analysis and overall candidate profile.
