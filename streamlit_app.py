@@ -9,7 +9,7 @@ def main():
     st.title("AI-Powered-Skill-Gap-Analysis")
 
     # Frontend inputs
-    uploaded_file = st.file_uploader("Upload a TXT file", type="txt")
+    uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
     target_role = st.text_input("Enter target role")
 
     # Add analyze button
@@ -17,7 +17,7 @@ def main():
         if uploaded_file and target_role:
             
             # Save uploaded file to temporary path
-            temp_path = "temp.txt"
+            temp_path = "temp.pdf"
             with open(temp_path, "wb") as f:
                 f.write(uploaded_file.getvalue())
 
