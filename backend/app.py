@@ -9,8 +9,7 @@ import uuid
 import threading
 from io import BytesIO
 from fastapi import FastAPI, UploadFile, File, Form, Request
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse, JSONResponse, Response
+from fastapi.responses import JSONResponse, Response
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
@@ -21,9 +20,6 @@ from main import run_pipeline, run_pipeline_with_progress
 from agent_function.agent_4_recommendation_report import recommendation_report_agent
 
 app = FastAPI(title="AI-Powered Skill Gap Analysis")
-
-# Serve static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 ANALYSIS_STAGES = [
     {
@@ -733,11 +729,6 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
     return JSONResponse(content={"error": str(exc), "traceback": tb}, status_code=500)
 
 
-@app.get("/")
-async def index():
-    return FileResponse("static/index.html")
-
-
 @app.post("/api/analyze")
 async def analyze(file: UploadFile = File(...), target_role: str = Form(...)):
     # Save uploaded file to a temp location
@@ -861,5 +852,5 @@ if __name__ == "__main__":
     from granian import Granian
     from granian.constants import Interfaces
 
-    granian = Granian("app:app", address="127.0.0.1", port=8000, interface=Interfaces.ASGI)
+    granian = Granian("app:app", address="0.0.0.0", port=8000, interface=Interfaces.ASGI)
     granian.serve()

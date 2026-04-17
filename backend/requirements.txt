@@ -2,9 +2,7 @@ python-dotenv==0.21.0
 langchain-core==0.3.76
 langgraph==0.3.30
 langchain-google-genai==2.0.5
-langchain-community==0.3.20
 pdfplumber==0.11.7
-pypdf>=4.0.0
 fastapi>=0.115.0
 granian>=1.6.0
 python-multipart>=0.0.9

@@ -2,7 +2,6 @@ from schemas.pipeline_state import PipelineState
 import os
 import pdfplumber
 import fitz  # pymupdf
-from google import genai
 from google.genai import types as genai_types
 import config.constants as constants
 
