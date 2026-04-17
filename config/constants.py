@@ -5,7 +5,7 @@ from google import genai
 load_dotenv("environment.env")
 
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-MODEL_NAME = "gemini-2.0-flash-lite"
+MODEL_NAME = os.getenv('MODEL_NAME')
 CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 
 llm = ChatGoogleGenerativeAI(model=MODEL_NAME, temperature=0, google_api_key=GEMINI_API_KEY)
